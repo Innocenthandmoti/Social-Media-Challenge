@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", Montserrat, sans-serif;
+  color: var(--color-primary-white);
+}
+:root {
+  --color-primary-white: #ffffff;
+  --color-secondary-green: #c5f82a;
+  --color-accent-button-bg: #333333;
+  --color-container-bg: #1f1f1f;
+  --color-extra-bg: #141414;
+  --font-primary: inter;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem =  10px */
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+    /* 1rem = 8px */
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 40%;
+    max-width: auto;
+
+    /* 1rem = 8px */
+  }
+}
+body {
+  background-color: var(--color-extra-bg);
+  max-width: 100%;
+  max-height: 100vh;
+  font-size: 1.6rem;
+
+  /*
+  max-height: 100vh; */
+}
+.social__section {
+  max-width: 70%;
+  font-size: 1.5rem;
+  background: var(--color-container-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+.avatar__image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.social__heading--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.7rem;
+}
+.avatar__name {
+  font-size: 3rem;
+  font-family: inter;
+  margin: 0 auto;
+}
+.avatar__location {
+  color: var(--color-secondary-green);
+  /* margin: 0 auto; */
+}
+
+.social__link--section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 1.5rem;
+  font-size: 1.7rem;
+}
+.social__link--title {
+  padding-top: 0.7rem;
+}
+.social__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.social__btn {
+  text-decoration: none;
+  text-align: center;
+  background: var(--color-accent-button-bg);
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+}
+.social__btn:hover {
+  background: var(--color-secondary-green);
+  color: var(--color-extra-bg);
+  transition: all 0.6s ease;
+}
+
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+- 
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700 */
